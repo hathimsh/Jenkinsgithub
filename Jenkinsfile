@@ -38,12 +38,14 @@ pipeline {
         stage('Integration Tests on Staging') {
             steps {
                 // Run integration tests on staging environment
+                sh 'mvn test'
             }
         }
 
         stage('Deploy to Production') {
             steps {
                 // Use Jenkins deployment plugin or AWS CLI to deploy to production
+                sh 'mvn deploy'
             }
         }
     }
