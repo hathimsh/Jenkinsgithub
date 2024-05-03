@@ -32,6 +32,7 @@ pipeline {
         stage('Deploy to Staging') {
             steps {
                 // Use Jenkins deployment plugin or AWS CLI to deploy to staging
+                sh 'mvn deploy'
             }
         }
 
