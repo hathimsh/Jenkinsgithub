@@ -15,7 +15,7 @@ pipeline {
                 success {
                     emailext subject: 'Art Added Stage - now using your credentials Saloni',
                         body: 'Art Added Stage',
-                        to: 'hathimshahul@gmail.com, art.random.email@gmail.com',
+                        to: 'hathimshahul@gmail.com, hemmaphan@gmail.com',
                         attachLog: true
                 }
             }
