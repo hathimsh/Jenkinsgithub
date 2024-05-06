@@ -22,6 +22,7 @@ pipeline {
         }
             }
         }
+        }
 
         stage('Code Analysis') {
             steps {
@@ -42,6 +43,7 @@ pipeline {
                 )
         }
             }
+        }
         }
 
         stage('Deploy to Staging') {
@@ -68,4 +70,4 @@ pipeline {
 
    
 }
-    }
+    
