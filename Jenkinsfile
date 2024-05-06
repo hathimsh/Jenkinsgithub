@@ -32,58 +32,12 @@ pipeline {
         }
         }
 
-        stage('Code Analysis') {
-            steps {
-                echo " Using Sonar Qube integrate a code analysis tool to analyse the code and ensure it meets industry standards."
-            }
+        
         }
 
-        stage('Security Scan') {
-            steps {
-                echo "Using OWASP perform a security scan on the code to identify any vulnerabilities"
-                 post {
-        success {
-            emailext (
-                    to: 'hathimshahul@gmail.com',
-                    subject: 'Build Success',
-                    body: 'The build succeeded!',
-                    attachLog: true
-                )
-        }
-                     failure{
-                         emailext (
-                    to: 'hathimshahul@gmail.com',
-                    subject: 'Build Failed',
-                    body: 'The build not succeeded!',
-                    attachLog: true
-                )
-                     }
-            }
-        }
-        }
-
-        stage('Deploy to Staging') {
-            steps {
-                echo " Use Jenkins deployment plugin or AWS EC2 to deploy to staging"
-               
-            }
-        }
-
-        stage('Integration Tests on Staging') {
-            steps {
-                echo "Run integration tests on staging environment"
-                
-            }
-        }
-
-        stage('Deploy to Production') {
-            steps {
-                echo "Use Jenkins deployment plugin or AWS CLI to deploy to production"
-                
-            }
-        }
-    }
-
+       
    
 }
+    
+
     
