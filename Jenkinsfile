@@ -20,6 +20,14 @@ pipeline {
                     attachLog: true
                 )
         }
+                      failure{
+                         emailext (
+                    to: 'hathimshahul@gmail.com',
+                    subject: 'Build Failed',
+                    body: 'The build not succeeded!',
+                    attachLog: true
+                )
+                     }
             }
         }
         }
@@ -42,6 +50,14 @@ pipeline {
                     attachLog: true
                 )
         }
+                     failure{
+                         emailext (
+                    to: 'hathimshahul@gmail.com',
+                    subject: 'Build Failed',
+                    body: 'The build not succeeded!',
+                    attachLog: true
+                )
+                     }
             }
         }
         }
