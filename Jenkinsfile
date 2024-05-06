@@ -17,6 +17,7 @@ pipeline {
                     body: 'The build succeeded!',
                     subject: 'Build Success',
                      to: 'hathimshahul@gmail.com' ,
+                attachLog: true
                 )
         }
             }
@@ -38,6 +39,7 @@ pipeline {
                     body: 'The build succeeded!',
                     subject: 'Build Success',
                      to: 'hathimshahul@gmail.com' ,
+                attachLog: true
                 )
         }
             }
