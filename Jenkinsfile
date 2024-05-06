@@ -54,7 +54,7 @@ pipeline {
             emailext (
                     body: 'The build succeeded!',
                     subject: 'Build Success',
-                     to: 'hshahulhameed@deakin.edu.au'
+                     to: 'hshahulhameed@deakin.edu.au' ,
                      attachlog:true
                 )
         }
@@ -62,7 +62,7 @@ pipeline {
             emailext (
                      body: 'The build failed. Please check the logs for details.',
                      subject: 'Build Failure',
-                     to: 'hshahulhameed@deakin.edu.au'
+                     to: 'hshahulhameed@deakin.edu.au' ,
                      attachlog:true
                 )
         }
