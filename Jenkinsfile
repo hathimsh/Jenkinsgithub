@@ -14,10 +14,10 @@ pipeline {
                  post {
         success {
             emailext (
-                    body: 'The build succeeded!',
+                    to: 'hathimshahul@gmail.com',
                     subject: 'Build Success',
-                     to: 'hathimshahul@gmail.com' ,
-                attachLog: true
+                    body: 'The build succeeded!',
+                    attachLog: true
                 )
         }
             }
@@ -36,10 +36,10 @@ pipeline {
                  post {
         success {
             emailext (
-                    body: 'The build succeeded!',
+                    to: 'hathimshahul@gmail.com',
                     subject: 'Build Success',
-                     to: 'hathimshahul@gmail.com' ,
-                attachLog: true
+                    body: 'The build succeeded!',
+                    attachLog: true
                 )
         }
             }
