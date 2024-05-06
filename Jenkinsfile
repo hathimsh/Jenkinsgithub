@@ -17,7 +17,7 @@ pipeline {
                     body: 'The build succeeded!',
                     subject: 'Build Success',
                      to: 'hshahulhameed@deakin.edu.au' ,
-                     attachlog:true
+                     attachlog: true
                 )
         }
             }
@@ -39,7 +39,7 @@ pipeline {
                     body: 'The build succeeded!',
                     subject: 'Build Success',
                      to: 'hshahulhameed@deakin.edu.au' ,
-                     attachlog:true
+                     attachlog: true
                 )
         }
             }
